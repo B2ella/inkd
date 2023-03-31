@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: black;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+}
+
+.logo {
+  position: fixed;
+  left: 20px;
+  width: 25px;
+  padding-top: 2rem;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  font-size: 15px;
+  right: 50px;
+  gap: 40px;
+  list-style: none;
+  z-index: 999;
+  padding-top: 2rem;
+}
+
+li:hover {
+  border-bottom: 4px solid white;
+}
+
+li:focus {
+  border-bottom: 4px solid white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.mtt {
+  width: 20vw;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+}
+
+.name {
+  font-size: 5rem;
+  position: absolute;
+  top: 23rem;
+  left: 44rem;
+  padding: 1rem;
+}
+
+.quote {
+  position: absolute;
+  top: 32rem;
+  left: 44rem;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+.clients {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  position: absolute;
+  top: 40rem;
+  left: 7rem;
+}
+
+.clients-img {
+  width: 20vw;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bgv2 {
+  height: 30rem;
+  width: 100rem;
+  margin-right: 20%;
+  margin-top: 6%;
+}
+
+/*# sourceMappingURL=/XeaPortfolio.8f468507.css.map */

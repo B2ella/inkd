@@ -1,0 +1,310 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home, .about, .meettheteam {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bg {
+  height: 40rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 5%;
+}
+
+.bg2 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 100vh;
+}
+
+.logo {
+  position: fixed;
+  left: 20px;
+  width: 25px;
+  padding-top: 2rem;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  right: 50px;
+  gap: 40px;
+  list-style: none;
+  z-index: 999;
+  padding-top: 2rem;
+}
+
+li:hover {
+  border-bottom: 4px solid white;
+}
+
+li:focus {
+  border-bottom: 4px solid white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.map {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.socials {
+  position: absolute;
+  display: flex;
+  right: 15px;
+  bottom: 15px;
+  gap: 1rem;
+}
+
+.fb, .insta {
+  width: 35px;
+  height: 35px;
+}
+
+.bgv2 {
+  height: 40rem;
+  width: 100rem;
+  margin-right: 20%;
+  margin-top: 6%;
+}
+
+.about {
+  overflow: hidden;
+}
+
+.aboutimg {
+  width: 35%;
+  position: absolute;
+  top: 25%;
+  right: -70px;
+}
+
+.about-title {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  font-size: 10rem;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+.about-container {
+  position: absolute;
+  top: 16rem;
+  left: 5rem;
+}
+
+.since {
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.studio {
+  font-size: 50px;
+}
+
+.studio, .since {
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.about-info {
+  color: white;
+  width: 35rem;
+  padding: 20px;
+}
+
+.mtt-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-right: 25rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  position: absolute;
+}
+
+.mtt {
+  height: 40vh;
+  width: 21.5vw;
+}
+
+.mttimg {
+  height: 70vh;
+  width: 100vw;
+  position: absolute;
+  margin-top: 10%;
+}
+
+.mtt-title {
+  position: absolute;
+  float: right;
+  bottom: 0rem;
+  right: 8rem;
+  color: white;
+  font-size: 8vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  padding: 100px;
+  padding-top: 150px;
+}
+
+.img-wrapper {
+  position: relative;
+  height: 40vh;
+  width: 21.5vw;
+}
+
+.img-wrapper:hover .description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.getintouch {
+  position: absolute;
+  left: 30px;
+  padding-top: 8rem;
+  font-size: 15rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 13rem;
+  -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(123, 117, 117);
+}
+
+.contact-info {
+  color: rgb(227, 225, 225);
+  position: absolute;
+  right: 10vw;
+  padding-top: 20vh;
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact {
+  display: inline;
+}
+
+.email, .tel, .send-us {
+  margin-top: 40px;
+  margin-bottom: 1px;
+  color: rgb(123, 117, 117);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+
+.faq {
+  height: 100vh;
+  width: 100vw;
+  opacity: 40%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.faq-title {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  position: relative;
+  z-index: 999;
+}
+
+.faq-container {
+  width: 100vw;
+  background: black;
+  position: relative;
+  padding-bottom: 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.faq-questions {
+  text-align: left;
+  padding-right: 20%;
+  padding-left: 20%;
+  font-family: "Poppins", sans-serif;
+}
+
+.question {
+  position: relative;
+  z-index: 999;
+  margin-top: 1rem;
+  padding-top: 20px;
+  border-top: solid white 0.5px;
+  font-size: 1.4vw;
+  font-weight: bold;
+  color: rgba(249, 253, 255, 0.868);
+}
+
+.response {
+  font-size: 1.1vw;
+  font-weight: lighter;
+  color: white;
+}
+
+li {
+  font-weight: normal;
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=/style.e0c02e61.css.map */
